@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&display=swap');
+
+:root {
+     --lgree: #E5F0B6;
+     --teal: #817253;
+     --brown: #553B33;
+     --darkBrown: #2F241F;
+
+}
+
+* {
+     list-style: none;
+     text-decoration: none;
+     padding: 0px;
+     margin: 0px;
+     font-family: 'Inter', sans-serif;
+     color: black;
+}
+
+li a:hover {
+     color: var(--teal);
+}
+
+
+/* Navbar */
+nav {
+     max-width: 100vw;
+     height: 10vh;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 12px 24px;
+}
+
+.logo {
+     width: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5%;
+}
+
+.logo img {
+     width: 20%;
+     height: 20%;
+}
+
+ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 5%;
+     width: 60%;
+}
+
+.nav-btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 20%;
+     gap: 10px;
+}
+
+.nav-btn a {
+     background-color: var(--lgree);
+     border: 1px solid var(--lgree);
+     border-radius: 8px;
+     font-weight: bold;
+     padding: 12px;
+}
+
+.nav-btn button {
+     background-color: var(--brown);
+     color: var(--lgree);
+     border: 1px solid var(--brown);
+     border-radius: 8px;
+     padding: 10px 14px;
+     cursor: pointer;
+}
+
+.nav-btn a:hover {
+     border: 1px solid var(--darkBrown);
+     transition: all 0.4s;
+     background: none;
+}
+
+.nav-btn button:hover {
+     background: var(--teal);
+     border: 1px solid var(--teal);
+     transition: all 0.4s;
+}
+
+main {
+     max-width: 100vw;
+}
+
+/* Hero */
+
+.hero1 {
+     max-width: 100vw;
+     height: 85vh;
+     display: flex;
+}
+
+/* Hero 1.1 */
+.hero1>div:nth-child(1) {
+     width: 70%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.hero1 a:hover {
+     background-color: var(--lgree);
+     color: var(--darkBrown);
+     transition: all 0.4s;
+}
+
+.hero1 h1 {
+     font-size: 4.5vw;
+     color: var(--darkBrown);
+     width: 65%;
+}
+
+.hero1 span {
+     color: var(--teal);
+}
+
+.btn-hero {
+     width: 65%;
+     height: 15%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2%;
+}
+
+.btn-hero a {
+     width: 50%;
+     height: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid var(--lgree);
+     background-color: var(--lgree);
+     color: var(--darkBrown);
+     border-radius: 12px;
+     gap: 5%;
+     font-size: 1em;
+}
+
+.btn-hero a:nth-child(2) {
+     background-color: transparent;
+     border: 1px solid var(--darkBrown);
+}
+
+.btn-hero a:hover {
+     background-color: transparent;
+     border: 1px solid var(--teal);
+     transition: all 0.4s;
+}
+
+/* Hero 1.2 */
+.hero1>div:nth-child(2) {
+     width: 30%;
+     height: 100%;
+     background-image: url('assets/hero1.svg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+
+.price {
+     width: fit-content;
+     position: absolute;
+     bottom: 15%;
+     left: 8%;
+}
+
+.price h2 {
+     color: var(--darkBrown);
+     font-weight: light;
+     background: rgba(255, 255, 255, 0.5);
+     border-radius: 12px;
+     display: inline;
+     padding: 2%;
+}
+
+.price h1 {
+     font-weight: normal;
+     color: white;
+     margin: 7% 0;
+}
+
+.price a {
+     padding: 16px 24px;
+     background: var(--darkBrown);
+     color: white;
+     border-radius: 12px;
+}
+
+/* Section 2 */
+.hero2 {
+     max-width: 100%;
+     height: 40vh;
+     padding: 6% 3%;
+     background-color: var(--darkBrown);
+     color: var(--lgree);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20%;
+}
+
+.hero2 h3 {
+     color: var(--lgree);
+     font-weight: 300;
+     width: 80%;
+}
+
+.hero2 h1 {
+     color: var(--lgree);
+     font-size: 4vw;
+     width: 80%;
+}
+
+.hero2 ul {
+     width: 80%;
+     display: flex;
+}
+
+.hero2 li {
+     color: var(--lgree);
+     width: 30%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 5%;
+     font-weight: bold;
+}
+
+
+/* Hero 3 */
+
+.hero3 {
+     max-width: 100%;
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10%;
+     background-color: #FCFAFA;
+}
+
+.hero3 div {
+     width: 15%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+}
+
+.hero3 h1 {
+     font-size: 6vw;
+     font-weight: bold;
+}
+
+.hero3 h3 {
+     font-weight: 300;
+}
+
+.hero3 ul {
+     width: 50%;
+}
+
+/* Hero 4 */
+
+.hero4 {
+     max-width: 100%;
+     height: 70vh;
+     display: flex;
+     flex-direction: row;
+     padding: 3% 0%;
+     margin-bottom: 6%;
+}
+
+.hero4>div:nth-child(1) {
+     max-width: 60%;
+     height: 100%;
+     padding: 5%;
+     padding-left: 0;
+     display: flex;
+     justify-content: center;
+     gap: 3%;
+}
+
+.a {
+     width: 20%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 12px;
+}
+
+.hero4>div:nth-child(2) {
+     max-width: 40%;
+     height: 100%;
+     padding: 3% 3% 3% 3%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.hero4 h1 {
+     font-size: 3.5vw;
+     font-weight: bold;
+     margin: 5% 0;
+     color: var(--darkBrown);
+}
+
+.hero4 h3 {
+     font-size: 3em;
+     font-weight: 300;
+}
+
+.hero4 button {
+     padding: 3% 5%;
+     font-size: 1.2em;
+     font-weight: bold;
+     background-color: #FCFAFA;
+     border: none;
+     display: flex;
+     justify-content: flex-start;
+     color: var(--darkBrown);
+}
+
+/* Hero 5 */
+
+.hero5 {
+     max-width: 100vw;
+     height: 90vh;
+     padding: 3% 0;
+     background-color: var(--darkBrown);
+     position: relative;
+}
+
+.hero5>div:nth-child(1) {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.hero5 h1 {
+     font-size: 3.5vw;
+     font-weight: bold;
+     color: var(--lgree);
+}
+
+.hero5 span {
+     font-size: 2.5vw;
+     font-weight: 300;
+     color: var(--lgree);
+}
+
+.hero5 a {
+     height: fit-content;
+     padding: 1% 3%;
+     font-size: 1em;
+     background-color: var(--lgree);
+     border-radius: 12px;
+     cursor: pointer;
+}
+
+.hero5 a:hover {
+     background-color: transparent;
+     color: var(--lgree);
+     border: 1px solid var(--lgree);
+     transition: all 0.3s;
+}
+
+.hero5>div:nth-child(3) {
+     width: 15%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: transparent;
+     position: absolute;
+     right: 10%;
+     bottom: 5%;
+}
+
+.hero5 button {
+     width: 25%;
+     aspect-ratio: 1/1;
+     border: 1px solid var(--lgree);
+     background-color: var(--lgree);
+     border-radius: 999px;
+}
+
+/* Hero 6 */
+
+.hero6 {
+     max-width: 100%;
+     height: fit-content;
+     background-color: #FCFAFA;
+     padding: 5% 7%;
+}
+
+.hero6 h3 {
+     font-size: 1.3em;
+     font-weight: 400;
+     margin-bottom: 2%;
+}
+
+.hero6 h1 {
+     font-size: 4vw;
+     font-weight: bold;
+     margin-bottom: 4%;
+}
+
+.hero6 form {
+     width: 30%;
+     height: 60px;
+     display: flex;
+}
+
+.hero6 input {
+     width: 80%;
+     height: 100%;
+     padding: 0;
+     border: none;
+     font-size: 1em;
+     padding-left: 5%;
+     border: none;
+}
+
+.hero6 button {
+     width: 20%;
+     height: 100%;
+     border: 1px solid var(--lgree);
+     background-color: var(--lgree);
+     color: var(--darkBrown);
+}
+
+.hero6 button:hover {
+     background-color: white;
+}
+
+
+footer {
+     max-width: 100vw;
+     display: flex;
+     flex-direction: row;
+}
+
+footer>div {
+     width: 50%;
+     padding: 7% 5%;
+}
+
+footer>div:nth-child(2) {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 2%;
+}
+
+footer span {
+     font-size: 1.5em;
+     color: var(--darkBrown);
+     font-weight: bold;
+}
+
+footer ul {
+     width: 30%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+}
+
+footer article {
+     margin: 30px 0px;
+     color: #667085;
+     text-align: justify;
+     line-height: 24px;
+}
+
+footer p {
+     color: #667085;
+}
+
+footer li {
+     margin-bottom: 30px;
+}
+
+footer a {
+     color: #667085;
+}
+
+@media screen and (max-width:992px) {
+
+     /* Hero 1 */
+     .hero1 {
+          flex-wrap: nowrap;
+          flex-direction: column;
+          padding: 0;
+     }
+
+     .hero1>div:nth-child(1) {
+          width: 100%;
+          height: 50vh;
+          text-align: center;
+     }
+
+     .hero1>div:nth-child(2) {
+          flex-wrap: wrap;
+          padding: 0px;
+          width: 100%;
+          height: 50vh;
+          background-image: url('assets/image\ 64.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          overflow: hidden;
+     }
+
+     .price {
+          width: 50%;
+          height: 50%;
+          top: 0;
+          left: 0;
+          padding: 10%;
+     }
+
+     /* Hero 2 */
+     .hero2 {
+          text-align: center;
+          gap: 2%;
+     }
+
+     .hero2 ul {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          font-weight: 2em;
+          text-align: start;
+          margin-top: 10px;
+     }
+
+     .hero2 li {
+          justify-content: flex-start;
+          width: 100%;
+          margin-bottom: 10px;
+     }
+
+     .hero2 img {}
+
+     /* Hero 3 */
+     .hero3 {
+          flex-direction: column;
+     }
+
+     .hero3 div {
+          width: 100%;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .hero3 h3 {
+          margin: 0 40px;
+     }
+
+     .hero3 ul {
+          max-width: 100%;
+     }
+
+     /* Hero 4 */
+     .hero4 {
+          flex-direction: column;
+     }
+
+     .hero4>div:nth-child(1) {
+          max-width: 100%;
+          height: 100%;
+          order: 2;
+          padding-left: 5%;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .hero4>div:nth-child(2) {
+          max-width: 100vw;
+          height: 100%;
+          text-align: center;
+          order: 1;
+     }
+
+     .hero4 button {
+          width: 100%;
+          font-size: 2em;
+     }
+
+     .hero4 img {
+          width: 30%;
+          aspect-ratio: 1/1;
+     }
+
+     /* Hero 6 */
+
+     .hero6 form {
+          width: 100%;
+     }
+
+
+     /* Footer */
+
+     footer {
+          flex-wrap: wrap;
+     }
+
+     footer>div {
+          width: 100%;
+     }
+
+     footer ul {
+          text-align: center;
+     }
+
+}

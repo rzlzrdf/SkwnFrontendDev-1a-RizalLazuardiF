@@ -96,8 +96,8 @@ ul {
      transition: all 0.4s;
 }
 
-.toggle{
-     display : none !important;
+.toggle {
+     display: none !important;
 }
 
 
@@ -170,42 +170,40 @@ ul {
 }
 
 /* Hero 1.2 */
-.hero1>div:nth-child(2) {
+.price {
      width: 30%;
      height: 100%;
+     padding-left: 5%;
      background-image: url('assets/hero1.svg');
      background-repeat: no-repeat;
      background-size: cover;
-     position: relative;
-}
-
-.price {
-     width: fit-content;
-     position: absolute;
-     bottom: 15%;
-     left: 8%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     gap: 3%;
 }
 
 .price h2 {
+     width: fit-content;
      color: var(--darkBrown);
      font-weight: light;
      background: rgba(255, 255, 255, 0.5);
      border-radius: 12px;
      display: inline;
-     padding: 2%;
 }
 
 .price h1 {
      font-weight: normal;
      color: white;
-     margin: 7% 0;
 }
 
 .price a {
+     width: fit-content;
      padding: 16px 24px;
      background: var(--darkBrown);
      color: white;
      border-radius: 12px;
+     margin-bottom: 25%;
 }
 
 /* Section 2 */
@@ -314,7 +312,6 @@ ul {
 .hero4>div:nth-child(2) {
      max-width: 40%;
      height: 100%;
-     padding: 3% 3% 3% 3%;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -388,7 +385,7 @@ ul {
      transition: all 0.3s;
 }
 
-.hero5>div:nth-child(3) {
+.prevnext {
      width: 15%;
      display: flex;
      justify-content: space-around;
@@ -540,9 +537,6 @@ footer a {
      .price {
           width: 50%;
           height: 50%;
-          top: 0;
-          left: 0;
-          padding: 10%;
      }
 
      /* Hero 2 */
@@ -591,20 +585,22 @@ footer a {
      /* Hero 4 */
      .hero4 {
           flex-direction: column;
+          height: 100%;
+          padding: 0;
      }
 
      .hero4>div:nth-child(1) {
           max-width: 100%;
-          height: 100%;
+          height: 50%;
           order: 2;
-          padding-left: 5%;
           justify-content: center;
-          align-items: center;
+          align-items: flex-end;
+          padding: 10px;
      }
 
      .hero4>div:nth-child(2) {
-          max-width: 100vw;
-          height: 100%;
+          max-width: 100%;
+          height: 50%;
           text-align: center;
           order: 1;
      }
@@ -616,7 +612,28 @@ footer a {
 
      .hero4 img {
           width: 30%;
+          border-radius: 24px;
           aspect-ratio: 1/1;
+     }
+
+     .hero4 button {
+          font-size: 1em;
+     }
+
+     .hero4 h1 {}
+
+     /* Hero 5 */
+     .prevnext {
+          width: 100%;
+          justify-content: space-between;
+          top: 15%;
+          left: 0;
+     }
+
+     .prevnext button {
+          width: 50px;
+          aspect-ratio: 1/1;
+          padding: 0;
      }
 
      /* Hero 6 */
@@ -632,36 +649,108 @@ footer a {
           flex-wrap: wrap;
      }
 
+     footer .logo {
+          width: 100%;
+          justify-content: center;
+     }
+
      footer>div {
           width: 100%;
+          justify-content: center;
      }
 
      footer ul {
+          align-items: center;
+     }
+
+     footer li {
           text-align: center;
+
      }
 
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
+
      /* Nav */
-     nav{
-          justify-content: space-between;
-          padding: 0 10%;
+     nav {
+          justify-content: space-around;
+          padding: 0 5%;
      }
 
-     nav ul{
+     nav ul {
           display: none !important;
      }
-     .nav-btn{
-          display: none !important;;
+
+     .nav-btn {
+          display: none !important;
+
      }
 
-     .toggle{
-          background-color: transparent;
-          border: none;
-          display: flex;
-          justify-items: center;
-          align-items: center;
+     .toggle {
+          display: block;
+     }
+
+     /* hero1 */
+
+     .hero1 h1 {
+          font-size: 2em;
+          width: 100%;
+          margin-bottom: 5%;
+     }
+
+     .hero1 br {
+          display: none;
+     }
+
+     .btn-hero {
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+     }
+
+     .btn-hero a {
+          width: 100%;
+          padding: 4%;
+     }
+
+     .price {
+          width: 100%;
+          height: 100%;
+          font-size: 1em;
+     }
+
+     .price h2 {
+          margin-left: 30px;
+     }
+
+     .price h1 {
+          margin-left: 30px;
+     }
+
+     .price a {
+          margin-left: 30px;
+     }
+
+     /* hero2 */
+
+     /* Hero 3 */
+     .hero3 img {
+          width: 60px;
+     }
+
+     footer>div:nth-child() {
+          width: 100%;
+          flex-wrap: wrap;
+     }
+
+     footer ul {
+          width: 45%;
+     }
+
+     footer li{
+          margin-bottom: 0;
      }
 
 }

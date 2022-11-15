@@ -19,6 +19,7 @@
                     <img src="assets/logo.svg" alt="">
                     <h1>Dekoor</h1>
                </div>
+
                <ul>
                     <li><a href="#">About Us</a></li>
                     <li>Furniture</li>
@@ -29,13 +30,20 @@
                     <li><a href="#">Sign In</a></button></li>
                     <li><button><img src="/assets/purchase.svg" /></button></li>
                </div>
-               <button class="toggle">
+               <span class="toggle" type="button">
                     <img src="assets/3line.svg" alt="">
-               </button>
+               </span>
           </nav>
+          <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="#">About</a>
+               <a href="#">Services</a>
+               <a href="#">Clients</a>
+               <a href="#">Contact</a>
+          </div>
      </header>
 
-     <main>
+     <main id="main">
           <section id="hero1" class="hero1">
                <div>
                     <h1>The kind of<br /> <span>furniture</span> you have<br />been looking for</h1>
@@ -110,13 +118,13 @@
                          <div class="swiper-slide">Slide 8</div>
                          <div class="swiper-slide">Slide 9</div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
                     <div class="swiper-pagination"></div>
                </div>
                <div class="prevnext">
-                    <button><img src="/assets/back.svg" alt=""></button>
-                    <button><img src="/assets/prev.svg" alt=""></button>
+                    <button class="swiper-button-next"></button>
+                    <button class="swiper-button-prev"></button>
                </div>
           </section>
 
@@ -178,11 +186,24 @@
                     depth: 100,
                     modifier: 1,
                     slideShadows: true,
+
                },
                pagination: {
                     el: ".swiper-pagination",
                },
           });
+          function openNav() {
+               document.getElementById("mySidenav").style.width = "250px";
+               document.getElementById("main").style.marginLeft = "250px";
+               document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+          function closeNav() {
+               document.getElementById("mySidenav").style.width = "0";
+               document.getElementById("main").style.marginLeft = "0";
+               document.body.style.backgroundColor = "white";
+          }
      </script>
 </body>
 

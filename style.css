@@ -478,6 +478,16 @@ footer span {
      font-weight: bold;
 }
 
+footer .logo {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+}
+
+footer .logo img {
+     width: 30px;
+}
+
 footer ul {
      width: 30%;
      height: 100%;
@@ -506,6 +516,51 @@ footer a {
      color: #667085;
 }
 
+/* Swipper */
+.swiper {
+     width: 100%;
+     height: 80%;
+}
+
+.swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+}
+
+.swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.swiper-slide {
+     width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+     width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+     width: 40%;
+}
+
 @media screen and (max-width:992px) {
 
      /* Nav */
@@ -532,6 +587,14 @@ footer a {
           background-size: cover;
           background-repeat: no-repeat;
           overflow: hidden;
+     }
+
+     .btn-hero {
+          margin-top: 20px;
+     }
+
+     .btn-hero a {
+          padding: 15px 0;
      }
 
      .price {
@@ -628,6 +691,7 @@ footer a {
           justify-content: space-between;
           top: 15%;
           left: 0;
+          z-index: 1;
      }
 
      .prevnext button {
@@ -659,6 +723,11 @@ footer a {
           justify-content: center;
      }
 
+     footer .logo img {
+          width: 60px;
+          height: 60px;
+     }
+
      footer ul {
           align-items: center;
      }
@@ -670,7 +739,7 @@ footer a {
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:767px) {
 
      /* Nav */
      nav {
@@ -745,11 +814,16 @@ footer a {
           flex-wrap: wrap;
      }
 
+     footer .logo img {
+          width: 40px;
+          height: 40px;
+     }
+
      footer ul {
           width: 45%;
      }
 
-     footer li{
+     footer li {
           margin-bottom: 0;
      }
 

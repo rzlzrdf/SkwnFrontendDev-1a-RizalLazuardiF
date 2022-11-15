@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="style.css">
      <link rel="shortcut icon" type="image/x-icon" href="/assets/logo.svg">
      <script src="jquery.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -97,8 +98,21 @@
                     </h1>
                     <a>See More</a>
                </div>
-               <div class="">
-
+               <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                         <div class="swiper-slide">Slide 1</div>
+                         <div class="swiper-slide">Slide 2</div>
+                         <div class="swiper-slide">Slide 3</div>
+                         <div class="swiper-slide">Slide 4</div>
+                         <div class="swiper-slide">Slide 5</div>
+                         <div class="swiper-slide">Slide 6</div>
+                         <div class="swiper-slide">Slide 7</div>
+                         <div class="swiper-slide">Slide 8</div>
+                         <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                </div>
                <div class="prevnext">
                     <button><img src="/assets/back.svg" alt=""></button>
@@ -118,10 +132,10 @@
 
      <footer>
           <div class="">
-               <div class="logo">
+               <a href="#" class="logo">
                     <img src="/assets/logo.svg" alt="">
                     <span>Dekoor</span>
-               </div>
+               </a>
                <article>Dekoor is a furniture company created to fulfill the needs of family with aesthetic feeling in
                     their furniture. Always pay attention to details and give clear communication for the customers.
                     Priority of our design is comfortability.</article>
@@ -151,6 +165,25 @@
                </ul>
           </div>
      </footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     <script>
+          var swiper = new Swiper(".mySwiper", {
+               effect: "coverflow",
+               grabCursor: true,
+               centeredSlides: true,
+               slidesPerView: "4",
+               coverflowEffect: {
+                    rotate: 10,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+               },
+               pagination: {
+                    el: ".swiper-pagination",
+               },
+          });
+     </script>
 </body>
 
 </html>

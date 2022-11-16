@@ -399,6 +399,7 @@ ul {
      position: absolute;
      right: 10%;
      bottom: 5%;
+     z-index: 1;
 }
 
 .hero5 button {
@@ -527,7 +528,8 @@ footer a {
 /* Swipper */
 .swiper {
      width: 100%;
-     height: 80%;
+     height: 70%;
+     z-index: 10;
 }
 
 .swiper-slide {
@@ -548,6 +550,7 @@ footer a {
      -ms-flex-align: center;
      -webkit-align-items: center;
      align-items: center;
+     
 }
 
 .swiper-slide img {

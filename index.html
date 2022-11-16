@@ -194,11 +194,13 @@
           }
           async function renderUsage() {
                let photos = await getPhoto();
+               let data = photos.splice(4995);
+               console.log(data)
                let html = '';
-               photos.forEach(photo => {
+               data.forEach(photo => {
                     let htmlSegment =
                          `<div class="swipe-slide">
-                            <img src="${photo.thumbnailUrl}" >
+                            <img src="${photo.url}" >
                         </div>`;
 
                     html += htmlSegment;
